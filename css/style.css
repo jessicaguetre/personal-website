@@ -4,26 +4,56 @@
     box-sizing: border-box;
 }
 
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* First parallax image */
-.bgimg-1 {
-    background-image: url("/jessicaguetre_website/images/theCheif1.jpg");
+
+.bgimg-1, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100%
 }
 
-/* Second parallax image */
+/* First home page parallax image */
+.bgimg-1 {
+    background-image: url("/jessicaguetre_website/images/theCheif1.jpg");
+}
+
+/* Second home page parallax image */
 .bgimg-2 {
     background-image: url("/jessicaguetre_website/images/mountFrosty1.jpg");
     min-height: 400px;
+}
+
+/* About me page parallax image */
+.bgimg-3 {
+    background-image: url("/jessicaguetre_website/images/lakeAboveTheClouds1.jpg");
+}
+
+/* Academics page parallax image */
+.bgimg-4 {
+    background-image: url("/jessicaguetre_website/images/parliament.jpg");
+}
+
+/* Contact page parallax image */
+.bgimg-5 {
+    background-image: url("/jessicaguetre_website/images/garabaldi1.jpg");
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -98,11 +128,9 @@
 }
 
 /* Button */
-.button, .large-button, .small-button {
-    background-color: white;
+.submit-button, .resume-button, .topofpage-button {
     transition-duration: 0.4s;
     border: none;
-    color: #616161;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -111,21 +139,38 @@
     margin: 4px 2px;
 }
 
-/* Large button */
-.large-button {
+/* Resume button and top of page button colour */
+.resume-button, .topofpage-button {
+    background-color: white;
+    color: #616161;
+}
+
+/* Resume button size */
+.resume-button {
     font-size: 16px;
     padding: 16px 32px;
     border-radius: 8px;
 }
 
-/* Small utton */
-.small-button {
+/* Top of page button and submit button size */
+.topofpage-button, .submit-button {
     font-size: 12px;
     padding: 8px 16px;
     border-radius: 4px;
 }
 
-/* Button hover */
-.button:hover, .large-button:hover, .small-button:hover {
+/* Resume button and top of page button hover colour */
+.resume-button:hover, .topofpage-button:hover {
     background-color:#cccccc!important;
+}
+
+/* Submit button colour */
+.submit-button {
+    background-color: #404040;
+    color: white;
+}
+
+/* Submit button hover colour */
+.submit-button:hover {
+    background-color:#616161!important;
 }
